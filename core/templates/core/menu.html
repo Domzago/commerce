@@ -1,0 +1,4 @@
+{% for category in categories %}
+    <a href="{% url 'store:category_detail' category.slug %}" class="text-blue-500 mx-auto hover:text-teal-500">{{ category.title }}</a>
+{% endfor %}
+
